@@ -27,6 +27,7 @@ class TodoListPage extends StatelessWidget {
         child: Text('リスト一覧画面'),
       ),
       floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.library_add),
         onPressed: () {
           Navigator.of(context).push(
             //pushで新規画面に遷移
