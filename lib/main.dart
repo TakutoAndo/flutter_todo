@@ -26,6 +26,33 @@ class TodoListPage extends StatelessWidget {
       body: Center(
         child: Text('リスト一覧画面'),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).push(
+            //pushで新規画面に遷移
+            MaterialPageRoute(builder: (context) {
+              return TodoAddPage();
+            }),
+          );
+        },
+      ),
+    );
+  }
+}
+
+//リスト追加画面用Widget
+class TodoAddPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: FlatButton(
+          onPressed: () {
+            Navigator.of(context).pop(); //pop()で前の画面に戻る
+          },
+          child: Text('リスト追加画面(タップで戻る)'),
+        ),
+      ),
     );
   }
 }
