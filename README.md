@@ -1,6 +1,6 @@
 # flutter_todo
 
-A new Flutter project.
+FlutterでTodoアプリ作成（チュートリアル）
 
 ## Getting Started
 
